@@ -1,0 +1,35 @@
+Bootstrap: library
+From: airl_lab/default/airl_env:qdax_f57720d0
+
+%labels
+    Author m.faldor22@imperial.ac.uk
+
+%help
+    Repository to explore Transformers.
+
+%files
+    requirements.txt /
+
+%post
+    # Update
+    apt-get update -y
+    pip3 install --upgrade pip
+
+    # Install
+    pip3 install -r /requirements.txt
+    pip3 install jaxlib==0.3.15+cuda11_cudnn82 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+
+    # Create working directory
+    mkdir /project/
+    cd /project/
+
+    git clone https://gitlab.doc.ic.ac.uk/AIRL/research_projects/maxence_faldor/transformer.git .
+    git checkout $COMMIT
+
+%apprun main
+    # Enter project
+    cd /project/
+
+    # Run main
+    python3 main.py "$@"
+
