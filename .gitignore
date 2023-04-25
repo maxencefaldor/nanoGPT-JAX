@@ -2,7 +2,8 @@
 apptainer/*.sif
 apptainer/tmp/
 
-# Hydra
+# Inputs and outputs
+inputs/
 outputs/
 
 # IDE configuration file
