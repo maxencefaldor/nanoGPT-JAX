@@ -2,10 +2,6 @@
 apptainer/*.sif
 apptainer/tmp/
 
-# Inputs and outputs
-inputs/
-outputs/
-
 # IDE configuration file
 .vscode
 .idea/
