@@ -16,7 +16,7 @@ import optax
 class Config():
     seed = 42
     num_iterations = 20000
-    batch_size = 256
+    batch_size = 512
     block_size = 64
     learning_rate = 1e-4
     embed_size = 256
