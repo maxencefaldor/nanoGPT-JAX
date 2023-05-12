@@ -1,9 +1,11 @@
 # nanoGPT in JAX !
 
-This repository is based on ![nanoGPT](https://github.com/karpathy/nanoGPT) from ![karpathy](https://github.com/karpathy) and you will find:
-- nanoGPT.ipynb, the original notebook in PyTorch
-- nanoGPT_jax.ipynb, the original notebook translated in JAX
-- nanoGPT_jax.py, a script to train a nanoGPT of ~200 lines in JAX
+This repository is based on [nanoGPT](https://github.com/karpathy/nanoGPT) from [karpathy](https://github.com/karpathy) and you will find:
+- ``nanoGPT.ipynb``, the original notebook in PyTorch
+- ``nanoGPT_jax.ipynb``, the original notebook translated in JAX
+- ``nanoGPT_jax.py``, a script to train a nanoGPT of ~200 lines in JAX
+
+You can find an example of the text it generates after training it for ~30 minutes in ``outputs/output.txt``.
 
 ## Installation
 
